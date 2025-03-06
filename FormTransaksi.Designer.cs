@@ -44,7 +44,6 @@
             this.numJumlah = new System.Windows.Forms.NumericUpDown();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.cmbMetode = new System.Windows.Forms.ComboBox();
-            this.btHitung = new System.Windows.Forms.Button();
             this.btSimpan = new System.Windows.Forms.Button();
             this.btBatal = new System.Windows.Forms.Button();
             this.btKembali = new System.Windows.Forms.Button();
@@ -197,22 +196,12 @@
             this.cmbMetode.TabIndex = 15;
             this.cmbMetode.Text = "Payment";
             // 
-            // btHitung
-            // 
-            this.btHitung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btHitung.Location = new System.Drawing.Point(174, 482);
-            this.btHitung.Name = "btHitung";
-            this.btHitung.Size = new System.Drawing.Size(164, 73);
-            this.btHitung.TabIndex = 16;
-            this.btHitung.Text = "Hitung Total";
-            this.btHitung.UseVisualStyleBackColor = false;
-            // 
             // btSimpan
             // 
             this.btSimpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btSimpan.Location = new System.Drawing.Point(174, 594);
+            this.btSimpan.Location = new System.Drawing.Point(174, 583);
             this.btSimpan.Name = "btSimpan";
-            this.btSimpan.Size = new System.Drawing.Size(164, 73);
+            this.btSimpan.Size = new System.Drawing.Size(431, 73);
             this.btSimpan.TabIndex = 17;
             this.btSimpan.Text = "Simpan";
             this.btSimpan.UseVisualStyleBackColor = false;
@@ -221,7 +210,7 @@
             // btBatal
             // 
             this.btBatal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btBatal.Location = new System.Drawing.Point(522, 482);
+            this.btBatal.Location = new System.Drawing.Point(174, 488);
             this.btBatal.Name = "btBatal";
             this.btBatal.Size = new System.Drawing.Size(164, 73);
             this.btBatal.TabIndex = 18;
@@ -233,7 +222,7 @@
             // 
             this.btKembali.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btKembali.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btKembali.Location = new System.Drawing.Point(522, 594);
+            this.btKembali.Location = new System.Drawing.Point(441, 488);
             this.btKembali.Name = "btKembali";
             this.btKembali.Size = new System.Drawing.Size(164, 73);
             this.btKembali.TabIndex = 19;
@@ -250,7 +239,6 @@
             this.Controls.Add(this.btKembali);
             this.Controls.Add(this.btBatal);
             this.Controls.Add(this.btSimpan);
-            this.Controls.Add(this.btHitung);
             this.Controls.Add(this.cmbMetode);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.numJumlah);
@@ -294,7 +282,6 @@
         private System.Windows.Forms.NumericUpDown numJumlah;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.ComboBox cmbMetode;
-        private System.Windows.Forms.Button btHitung;
         private System.Windows.Forms.Button btSimpan;
         private System.Windows.Forms.Button btBatal;
         private System.Windows.Forms.Button btKembali;

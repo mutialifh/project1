@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,15 +42,13 @@ namespace project1
             {
                 MessageBox.Show("Login Berhasil!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string[] data = hasil.Split('|'); // Pisahkan nama & role
-                GlobalVariabel.nama = data[0]; // Simpan hanya nama
                 GlobalVariabel.email = obj.Email;
+                GlobalVariabel.nama = hasil.Split('|')[0];
 
-                string userRole = data[1]; // Gunakan nama variabel berbeda
+                MessageBox.Show("Role yang dikirim ke Dashboard: " + obj.Role);
 
-                MessageBox.Show("Role yang dikirim ke Dashboard: " + userRole);
-
-                FormDashboard dashboard = new FormDashboard(userRole);
+                FormDashboard dashboard = new FormDashboard();
+                dashboard.InitializeDashboard(obj.Role);
                 dashboard.Show();
                 this.Hide();
             }
@@ -66,6 +64,7 @@ namespace project1
                 }
             }
         }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
