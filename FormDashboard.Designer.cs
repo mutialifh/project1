@@ -186,6 +186,7 @@
             this.btTransaksi.TabIndex = 3;
             this.btTransaksi.Text = "Lihat Transaksi";
             this.btTransaksi.UseVisualStyleBackColor = true;
+            this.btTransaksi.Click += new System.EventHandler(this.btTransaksi_Click);
             // 
             // lbName
             // 

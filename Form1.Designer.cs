@@ -45,9 +45,9 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblLogin.Location = new System.Drawing.Point(321, 15);
+            this.lblLogin.Location = new System.Drawing.Point(361, 19);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(50, 20);
+            this.lblLogin.Size = new System.Drawing.Size(60, 25);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login";
             // 
@@ -56,9 +56,9 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblEmail.Location = new System.Drawing.Point(68, 72);
+            this.lblEmail.Location = new System.Drawing.Point(76, 90);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(56, 20);
+            this.lblEmail.Size = new System.Drawing.Size(66, 25);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Email:";
             // 
@@ -67,9 +67,9 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(68, 111);
+            this.lblPassword.Location = new System.Drawing.Point(76, 139);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(88, 20);
+            this.lblPassword.Size = new System.Drawing.Size(104, 25);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password:";
             // 
@@ -78,27 +78,27 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRole.Location = new System.Drawing.Point(68, 147);
+            this.lblRole.Location = new System.Drawing.Point(76, 184);
             this.lblRole.Name = "lblRole";
             this.lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblRole.Size = new System.Drawing.Size(118, 20);
+            this.lblRole.Size = new System.Drawing.Size(140, 25);
             this.lblRole.TabIndex = 3;
             this.lblRole.Text = "Login sebagai:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(239, 71);
+            this.txtEmail.Location = new System.Drawing.Point(269, 89);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(336, 22);
+            this.txtEmail.Size = new System.Drawing.Size(378, 26);
             this.txtEmail.TabIndex = 4;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(239, 110);
+            this.txtPassword.Location = new System.Drawing.Point(269, 138);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(336, 22);
+            this.txtPassword.Size = new System.Drawing.Size(378, 26);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -109,10 +109,10 @@
             this.cmbRole.Items.AddRange(new object[] {
             "Administrator",
             "Customer"});
-            this.cmbRole.Location = new System.Drawing.Point(239, 145);
+            this.cmbRole.Location = new System.Drawing.Point(269, 181);
             this.cmbRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(336, 24);
+            this.cmbRole.Size = new System.Drawing.Size(378, 28);
             this.cmbRole.TabIndex = 6;
             this.cmbRole.Text = "Login";
             // 
@@ -120,10 +120,10 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogin.Location = new System.Drawing.Point(175, 261);
+            this.btnLogin.Location = new System.Drawing.Point(197, 326);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(199, 42);
+            this.btnLogin.Size = new System.Drawing.Size(224, 52);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Masuk";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -133,10 +133,10 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.Location = new System.Drawing.Point(405, 260);
+            this.btnExit.Location = new System.Drawing.Point(456, 325);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(199, 42);
+            this.btnExit.Size = new System.Drawing.Size(224, 52);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Keluar";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -146,20 +146,20 @@
             // 
             this.chkShowPassword.AutoSize = true;
             this.chkShowPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkShowPassword.Location = new System.Drawing.Point(585, 114);
+            this.chkShowPassword.Location = new System.Drawing.Point(658, 142);
             this.chkShowPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(18, 17);
+            this.chkShowPassword.Size = new System.Drawing.Size(22, 21);
             this.chkShowPassword.TabIndex = 9;
             this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.BackColor = System.Drawing.Color.Purple;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);

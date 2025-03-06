@@ -19,7 +19,7 @@ namespace project1
 
             string namaUser = GlobalVariabel.nama; // Ambil nama dari global variabel
 
-           lblWelcomeUser.Text = "Selamat Datang, " + namaUser + "!"; // Pastikan hanya nama yang ditampilkan
+            lblWelcomeUser.Text = "Selamat Datang, " + namaUser + "!"; // Pastikan hanya nama yang ditampilkan
 
             if (role == "Administrator")
             {
@@ -53,6 +53,11 @@ namespace project1
             formLogin.Show();
 
             this.Close();
+        }
+
+        private void btTransaksi_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

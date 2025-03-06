@@ -101,8 +101,19 @@ namespace project1
             try
             {
                 koneksi.bukaKoneksi(); // Gunakan koneksi dari objek 'koneksi'
-                SqlCommand cmd = new SqlCommand("INSERT INTO Transaksi (IDTransaksi, Nama, Email, Kursus, Harga, Jumlah, Total, Metode) " +
-                                                "VALUES (@id, @nama, @email, @kursus, @harga, @jumlah, @total, @metode)", koneksi.con);
+
+                SqlCommand cmd = new SqlCommand("INSERT INTO dbo.Transactions (UserName, Email, CourseName, CoursePrice, Quantity, TotalPrice, PaymentMethod) " +
+                                "VALUES (@nama, @email, @kursus, @harga, @jumlah, @total, @metode)", koneksi.con);
+
+
+                cmd.Parameters.AddWithValue("@id", txtID.Text);
+                cmd.Parameters.AddWithValue("@nama", txtNama.Text);
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@kursus", cmbKursus.Text);
+                cmd.Parameters.AddWithValue("@harga", Convert.ToDecimal(txtHarga.Text));
+                cmd.Parameters.AddWithValue("@jumlah", Convert.ToInt32(numJumlah.Value));
+                cmd.Parameters.AddWithValue("@total", Convert.ToDecimal(txtTotal.Text));
+                cmd.Parameters.AddWithValue("@metode", cmbMetode.SelectedItem.ToString());
 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Transaksi berhasil disimpan!");
@@ -114,10 +125,9 @@ namespace project1
             }
             finally
             {
-                conn.Close();
+                koneksi.tutupKoneksi(); // Gunakan metode dari 'koneksi' bukan 'conn.Close();'
             }
         }
-
         private void btBatal_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -125,7 +135,9 @@ namespace project1
 
         private void btKembali_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormDashboard formDashboard = new FormDashboard("Customer"); // Buat instance FormDashboard
+            formDashboard.Show(); // Tampilkan FormDashboard
+            this.Close(); // Tutup FormTransaksi
         }
     }
 }
