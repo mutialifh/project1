@@ -34,7 +34,7 @@ namespace project1
                 {
                     fullName = reader["FullName"].ToString();
                     string roleDB = reader["Role"].ToString();
-                    role = (roleDB == "1") ? "Administrator" : "Customer";
+                    role = roleDB.Trim();
                 }
 
                 reader.Close();
